@@ -1,0 +1,23 @@
+
+spring:
+  profiles:
+    active: dev
+
+  datasource:
+          url: jdbc:mysql://172.16.90.196:3306/mybatistest
+          name: mybatistest
+          username: root
+          password: 123456
+#          type: com.alibab.duid.pool.DruidDataSource
+          driver-class-name: com.mysql.jdbc.Driver
+  swagger:
+    enabled: true
+
+
+mybatis:
+  mapper-locations: classpath:mybatis-mappers/notification/*.xml
+  type-aliases-package: com.nhc.batisdemo.model
+server:
+  port: 8080
+
+
